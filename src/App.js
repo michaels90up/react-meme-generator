@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="App">
       <h1>React-Meme-Generator</h1>
-      <p>Here should the memes appear.</p>
+      <br />
+      <div>Here should the memes appear.</div>
+      <div>
+        <button></button>
+      </div>
     </div>
   );
 }
