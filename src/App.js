@@ -10,7 +10,17 @@ function App() {
   const [topText, setTopText] = useState('');
   const [bottomText, setBottomText] = useState('');
   const [image, setImage] = useState(startImage);
-  const [memeType, setMemeType] = useState('');
+  const [memeTemplate, setMemeTemplate] = useState('');
+
+  // fetching data
+  // fetch('https://memegen.link/examples/')
+  //   .then((response) => response.text())
+  //   .then((data) => console.log(data))
+  //   .catch(() => {});
+
+  const url = '';
+  // https://api.memegen.link/images/${memeTemplate}/${topText}/${bottomText}.jpg
+  // all templates: https://api.memegen.link/templates/
 
   return (
     <div className="App">
@@ -68,8 +78,8 @@ function App() {
           <label htmlFor="meme">Meme template: </label>
           <input
             name="meme"
-            value={memeType}
-            onChange={(event) => setMemeType(event.currentTarget.value)}
+            value={memeTemplate}
+            onChange={(event) => setMemeTemplate(event.currentTarget.value)}
           />
         </div>
         <br />
